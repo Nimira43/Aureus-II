@@ -1,8 +1,4 @@
 import { useState, useEffect } from 'react'
-import CoinCard from './components/CoinCard'
-import LimitSelector from './components/LimitSelector'
-import FilterInput from './components/FilterInput'
-import SortSelector from './components/SortSelector'
 
 const API_URL = import.meta.env.VITE_API_URL
 
