@@ -31,7 +31,22 @@ const App = () => {
   
   return ( 
     <Routes>
-      <Route path='/' element={<HomePage />} />
+      <Route
+        path='/'
+        element={
+          <HomePage
+            coins={coins}
+            filter={filter}
+            setFilter={setFilter}
+            limit={limit}
+            setLimit={setLimit}
+            sortBy={sortBy}
+            setSortBy={setSortBy}
+            loading={loading}
+            error={error}
+          />
+        }
+      />
     </Routes>
   )
 }
