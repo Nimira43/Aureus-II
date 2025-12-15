@@ -3,8 +3,9 @@
 :root {
   --main-font: 'Poppins', sans-serif;
   --logo-font: 'Ceviche One', system-ui;  
-  --main: #ffd700;
-  --main-light: #fefeba;
+  --main: #e5a327;
+  --main-light: #e5c790;
+  --main-focus: #ff4500;
   --black: #000;
   --dark: #111;
   --light: #fffdfa;
@@ -14,6 +15,7 @@
   --grey-4: #eee;
   --postive: #12b012;
   --negative: #d01717;
+  --transition: all 0.5s ease-in-out;
 }
 
 * {
@@ -135,6 +137,7 @@ a {
   border-radius: 3px;
   padding: 0.75rem; 
   outline: none;
+  transition: var(--transition);
 }
 
 .controls select option {
@@ -155,10 +158,16 @@ a {
   color: var(--main);
   font-size: 1rem;
   outline: none;
+  transition: var(--transition);
 }
 
 .filter input::placeholder {
   color: var(--main-light)
+}
+
+.filter input:focus,
+.controls select:focus {
+  border-color: var(--main-focus);
 }
 
 .top-nav {

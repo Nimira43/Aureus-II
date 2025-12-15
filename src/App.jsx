@@ -65,7 +65,7 @@ const App = () => {
 
   return ( 
     <div>
-      <h1 className='logo-text'>Aureus</h1>
+      <h1 className='logo-text'>Aureus II</h1>
       { loading && 
         <p>Loading...</p>
       }
