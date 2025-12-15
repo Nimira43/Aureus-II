@@ -28,45 +28,7 @@ const App = () => {
 
   
   return ( 
-    <div>
-      <h1 className='logo-text'>Aureus II</h1>
-      { loading && 
-        <p>Loading...</p>
-      }
-      { error && 
-        <div className='error'>
-          {error}
-        </div>
-      }
-      <div className='top-controls'>
-        <FilterInput 
-          filter={filter}
-          onFilterChange={setFilter}
-        />
-        <LimitSelector 
-          limit={limit}
-          onLimitChange={setLimit }
-        />
-        <SortSelector 
-          sortBy={sortBy}
-          onSortChange={setSortBy}
-        />
-      </div>
-        
-      {!loading && !error && (
-        <main className='grid'>
-          {filteredCoins.length > 0 ?
-            filteredCoins.map((coin) => (
-            <CoinCard 
-              key={coin.id}
-              coin={coin}
-            />
-          )) : (
-            <p className='main-colour'>No matching coins found.</p>
-          )}
-        </main>
-      )}
-    </div>
+    
   )
 }
  
