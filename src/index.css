@@ -38,12 +38,35 @@ a {
   color: var(--main);
 }
 
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.top-nav a {
+  color: var(--main);
+  font-weight: 400;
+  transition: color 0.5s ease-in-out;
+}
+
+.top-nav a:hover {
+  color: var(--light);
+}
+
 .logo-text {
   font-family: var(--logo-font);
   font-weight: lighter;
   font-size: 3rem;
   color: var(--main);
-  margin-bottom: 2rem;
 }
 
 .main-colour {
@@ -97,7 +120,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -170,33 +193,20 @@ a {
   border-color: var(--main-focus);
 }
 
-.top-nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.top-nav a {
-  color: var(--main);
-  font-weight: 400;
-  transition: color 0.5s ease-in-out;
-}
-
-.top-nav a:hover {
-  color: var(--light);
-}
-
 .about {
   max-width: 600px;
   margin: 0 auto;
-  background-color: var(--grey-1);
+  color: var(--main);
+  background-color: var(--black);
   padding: 2rem;
   border-radius: 3px;
-  border: 1px solid var(--grey-3);
+  border: 1px solid var(--main);
+  text-align: center;
 }
 
-.about h1 { 
+.about h1 {
+  font-family: var(--logo-font);
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 

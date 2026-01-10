@@ -49,7 +49,6 @@ const HomePage = ({
 
   return ( 
     <div>
-      <h1 className='logo-text'>Aureus II</h1>
       { loading && 
         <p>Loading...</p>
       }
