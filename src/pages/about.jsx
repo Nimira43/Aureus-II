@@ -1,3 +1,5 @@
+import { Link } from 'react-router'
+
 const AboutPage = () => {
   return ( 
     <div className='about'>
@@ -7,6 +9,12 @@ const AboutPage = () => {
       <p>The interface focuses on speed, simplicity, and readability, allowing users to explore coins effortlessly. Sorting, filtering, and adjusting the number of visible assets feels intuitive and responsive.</p>
       <p>Aureus II adapts to different devices and screen sizes, ensuring a consistent experience whether you're checking markets casually or monitoring trends throughout the day.</p>
       <p>By combining clean design with dependable data, Aureus II empowers users to stay informed, make confident decisions, and navigate the evolving world of digital assets with ease.</p>
+      <Link
+        to='/'
+        className='nav-link'
+      >
+        Home
+      </Link> 
     </div>
    )
 }

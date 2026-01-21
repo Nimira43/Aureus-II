@@ -7,8 +7,18 @@ const Header = () => {
         <h1 className='logo-text'>Aureus II</h1>
       </div>
       <div className='top-nav'>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link
+          to='/'
+          className='nav-link top-nav-link'
+        >
+          Home
+        </Link>
+        <Link
+          to='/about'
+          className='nav-link top-nav-link'
+        >
+          About
+        </Link>
       </div>
     </div>
     
